@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02293a"
+    tools:context=".TailorinfosubmitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_taskid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Enter Taks Id."
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_userid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_itemid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <include layout="@layout/list_item" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Click for Delivery Date"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Contact no"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Spinner
+            android:id="@+id/spnselect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"></Spinner>
+
+        <Spinner
+            android:id="@+id/spnsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"
+            android:visibility="gone"></Spinner>
+
+        <LinearLayout
+            android:id="@+id/llshirt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/shapeemail">
+
+            <EditText
+                android:id="@+id/et_slength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter length"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_sshoulder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter shoulder measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_sbaay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter baay measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_scheast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter chest measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_scollor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter collor measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_sarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter arm measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+            <EditText
+                android:id="@+id/et_sfront"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter front measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llpent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/shapeemail">
+
+            <EditText
+                android:id="@+id/et_plength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter length"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_pwaist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter waist measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_pseat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter seat measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_pbottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter bottom measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_pknee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter knee measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+            <EditText
+                android:id="@+id/et_pthign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter thigh measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_plevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Enter level measure"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/shapelogin"
+            android:padding="15dp"
+            android:shadowColor="@android:color/transparent"
+            android:text="Fetch details" />
+
+    </LinearLayout>
+</ScrollView>

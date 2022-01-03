@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#02293a"
+    android:orientation="vertical"
+    android:gravity="center">
+   <Button
+       android:id="@+id/btn_additem"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Add Item"
+       android:shadowColor="@android:color/transparent"
+       android:padding="15dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_marginTop="0dp"
+       android:background="@drawable/shapelogin"
+       android:visibility="gone"/>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/tv_logout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true"
+          android:text="Logout"
+          android:textColor="@android:color/holo_orange_dark"
+          android:textSize="20dp"/>
+   </RelativeLayout>
+
+   <ListView
+       android:id="@+id/lv_displayitem"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/shapeemail"></ListView>
+
+</LinearLayout>

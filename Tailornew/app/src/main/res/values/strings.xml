@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Tailornew</string>
+
+
+    <string name="nameerror">Enter a valid name</string>
+    <string name="emailerror">Enter a valid email</string>
+    <string name="mobileerror">Enter a valid mobile</string>
+    <string name="addresserror">Enter a valid address</string>
+    <string name="passworderror">Enter a vaild password</string>
+
+    <string-array name="Clothing_Type">
+        <item>Select clothing type</item>
+        <item>Shirt Suit</item>
+        <item>Shervani</item>
+        <item>Jabho Lengho</item>
+    </string-array>
+
+    <string-array name="sp">
+        <item>Select type</item>
+        <item>Shirt</item>
+        <item>Pent</item>
+        <item>Shervani</item>
+        <item>Suit</item>
+        <item>Jabho</item>
+        <item>Lengho</item>
+    </string-array>
+</resources>
